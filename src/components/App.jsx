@@ -10,6 +10,7 @@ import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 // import stats from "./data/user";
 import user from './data/user';
 import data from './data/data';
+import friends from './data/friends';
 
 
 
@@ -39,7 +40,8 @@ export const App = () => {
   avatar={user.avatar}
   stats={user.stats}
 />
-    <Statistics title="Upload stats" stats={data} />
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />;
     </>
   );
 };
